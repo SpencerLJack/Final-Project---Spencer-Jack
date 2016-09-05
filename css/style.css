@@ -1,0 +1,279 @@
+/*
+Project Name: Final Project
+Client: Your Client
+Author: Spencer Jack
+Developer @GA in Seattle
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+
+/* Box Model Hack */
+
+* {
+    -moz-box-sizing: border-box;
+    /* Firexfox */
+    -webkit-box-sizing: border-box;
+    /* Safari/Chrome/iOS/Android */
+    box-sizing: border-box;
+    /* IE */
+}
+
+
+/* Clear fix hack */
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clear {
+    clear: both;
+}
+
+.alignright {
+    float: right;
+    padding: 0 0 10px 10px;
+    /* note the padding around a right floated image */
+}
+
+.alignleft {
+    float: left;
+    padding: 0 10px 10px 0;
+    /* note the padding around a left floated image */
+}
+
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+body {
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    color: #000;
+    font-size: 12px;
+    line-height: 1.4;
+    /*font-family: Helvetica, Arial, sans-serif;*/
+    background: none;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+    /*------NEW------*/
+    /*necessary for header to float above body*/
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 15;
+    overflow:hidden;
+    /* background color must match body background to hide body on scroll- inherit*/
+    background-color: white;
+    border-bottom: 1px solid rgba(72, 65, 71, .7);
+    /*------NEW------*/
+    /*height: 160px; ORIGINAL */
+    height: 23%;
+    /*------so body dissapears under header on scroll*/
+    width: 96%; 
+    margin: 0px auto;
+    padding: 50px 0px 30px 0px;
+    clear: both;
+}
+h1 {
+    font-family: 'Josefine Slab', serif;
+    text-align: center;
+    vertical-align: middle;
+    float: left;
+}
+#menu li p{
+    font-family: "Source Sans Pro", sans-serif;
+    padding: 0 auto; 
+    font-size: 24px;
+    font-weight: 100;
+    text-align:center;
+    display: inline-block;
+    vertical-align:top;
+    float: right;
+    
+}
+#menu li p:first-child {
+    margin-left: 10px;
+}
+#subHeaderText{
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    /*margin-top: 20px; ORIGINAL */
+    margin-top: 18.3%;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+    width: 96%;
+    /*height: 190px; ORIGINAL*/
+    height: 30%;
+    text-align: left;
+}
+h3{  
+    padding: 0% 5.5% 6.5% 5.5%;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 100;
+    /*font-size: 30px; ORIGINAL */
+    font-size: 2.6em; 
+    line-height: 1.2;
+    letter-spacing: 1px;
+    border-bottom: 1px solid rgba(72, 65, 71, .7);
+    border-bottom-width: 90%;
+    color: rgba(72, 65, 71, 1);
+}
+.bold {
+    font-family: "Josefin Slab", serif;
+    font-weight:600;
+    font-style: normal;
+    font-size: 6.25em; 
+    text-transform: none;
+    letter-spacing: 1.5px;
+    padding: 0px;
+    margin: 0px 0px 0px 0px;
+    display: inline-block;
+    line-height: .9em;
+    text-align: center;
+    color: rgba(72, 65, 71, 1);
+}
+.light {
+    font-family: "Josefin Slab", serif;
+    font-weight:200;
+    font-style: normal;
+    font-size: 6.25em; 
+    text-transform: none;
+    letter-spacing: 1.5px;
+    padding: 0px;
+    margin: 0px 0px 0px 10px;
+    display: inline-block;
+    line-height: .9em;
+    text-align: center;
+    color: rgba(72, 65, 71, 1);
+}
+#photos{
+/*change height to get more page length later*/
+    width: 96.00%;
+    height: 100%;
+    margin: 0px auto;
+    position:relative;
+    /* to provide space below header */
+    top: 60px;
+    left: 0px;
+    right: 0px;
+    z-index: 10;
+}
+/*#photos img{
+    width: 85%;
+    height: auto !important;
+    align-content: center;
+    display: inline;
+    background-size: cover;
+}
+*/
+img{
+    height: auto;
+    width: 100%;
+    display: block;
+}
+/*class for photo ratio orientation identification*/
+#LS_Photos_Left{ 
+    /*crucial. prevents photos from expanding webpage width*/
+    width: 69.13%;
+    height: 30%;
+    margin: 0px;
+    padding: 0px .25% 0% 0%;
+    display: inline-block;
+    float: left;
+}
+/*-------this ID not used yet------*/
+#LS_Photos_Right{ 
+    /*crucial. prevents photos from expanding webpage width*/
+    width: 69.13%;
+    height: 30%;
+    margin: 0px;
+    padding: 0px;
+    display: inline-block;
+    object-fit: fill;
+    float: right;
+}
+#LS_Photos_Left_5X7{
+    width: 64.97%;
+    height: 10%;
+    margin: 0px;
+    padding: 0px .25% 0% 0%;
+    display: inline-block;
+    float: left;
+}
+#Portrait_Photos_Right{
+    width: 30.86%;
+    height: 75%;
+    margin: 0px;
+    padding: 0px 0% 0% .25%;
+    display: inline-block;
+    float:inherit;
+}
+#Portrait_Photos_Right_4X3{
+    width: 34.92%;
+    height: 25%;
+    margin: 0px;
+    padding: 0px 0% 0% .25%;
+    display: inline-block;
+    float:right;
+}
+
+/*-------Footer Starts Here------*/
+
+footer {
+    width: 100%;
+    height: 1000px;
+    display: inline-block;
+    clear: both;
+}
+footer div {
+    width: auto;
+    height: 250px;
+    border: none;
+}
+
+/******************************************
+/* Additional Styles
+/*******************************************/
+.show1{
+    /*position: fixed;*/
+    opacity:1;
+    transition: opacity .5s;
+}
+.hide2{
+    /*position:relative;*/
+    opacity:0;
+    transition: opacity .1s;
+}
+.show2faster{
+   opacity:1;
+    transition: opacity 1s;
+}
+.hide2faster{
+    opacity:0;
+    transition: opacity .1s;
+}
+.hidden { opacity: 0; }
