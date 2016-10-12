@@ -144,7 +144,7 @@ header{
      margin: 0;
      padding: 0;
 }
-.logo_light {
+.logo_light{
         font-family: 'Archivo Black', sans-serif;
         text-align: center;
         vertical-align: middle;
@@ -191,7 +191,7 @@ header nav ul li {
     border-width: 100%;
     background-color: rgba(72, 65, 71, 1);
 }
-a{
+li a{
     font-family: 'Tenor Sans', sans-serif;
     font-size: 1.95em;
     text-decoration: none;
