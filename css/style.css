@@ -67,10 +67,10 @@ body {
 /* Mobile-first (lines 70-73 and closing bracket on line 232 added 10/12/16)
 /*******************************************/
 
-@media only screen 
+/*@media only screen 
   and (min-device-width: 320px) 
   and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2) {
+  and (-webkit-min-device-pixel-ratio: 2) {             */
 
 
 
@@ -229,7 +229,7 @@ h3 {
     border-bottom-width: 90%;
     color: rgba(72, 65, 71, 1);
 }
-}
+/*}         */
 #photos {
     /*change height to get more page length later*/
     width: 96.00%;
