@@ -191,7 +191,7 @@ header nav ul li {
     border-width: 100%;
     background-color: rgba(72, 65, 71, 1);
 }
-li a{
+# menu ul li a{
     font-family: 'Tenor Sans', sans-serif;
     font-size: 1.95em;
     text-decoration: none;
