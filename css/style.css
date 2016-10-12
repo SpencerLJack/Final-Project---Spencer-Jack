@@ -355,6 +355,13 @@ footer div {
 }   /* clowing bracket for mobile media query*/
 
 /*---------rules applied to desktop version--------*/
+/* ----------- Retina Screens ----------- */
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (min-resolution: 192dpi) { 
+}
 
 @media only screen and (min-width: 768px) {
     
