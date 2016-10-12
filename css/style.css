@@ -64,7 +64,7 @@ body {
     background-size: cover;
 }
 /******************************************
-/* Mobile-first (lines 70-73 and closing bracket on line 355 added 10/12/16)
+/* Mobile-first (lines 70-73 and closing bracket on line 232 added 10/12/16)
 /*******************************************/
 
 @media only screen 
@@ -229,6 +229,7 @@ h3 {
     border-bottom-width: 90%;
     color: rgba(72, 65, 71, 1);
 }
+}
 #photos {
     /*change height to get more page length later*/
     width: 96.00%;
@@ -352,16 +353,8 @@ footer div {
 .hidden {
     opacity: 0;
 }
-}   /* clowing bracket for mobile media query*/
 
 /*---------rules applied to desktop version--------*/
-/* ----------- Retina Screens ----------- */
-@media screen 
-  and (min-device-width: 1200px) 
-  and (max-device-width: 1600px) 
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (min-resolution: 192dpi) { 
-}
 
 @media only screen and (min-width: 768px) {
     
