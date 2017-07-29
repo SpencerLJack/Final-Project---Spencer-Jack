@@ -40,15 +40,9 @@
                 <div class='above_text_2'>
                     <p class='light'>BROWSE BY</p>
                 </div>
-                <a href='boroughs.html'>
-                    <p class='lightest'>Boroughs</p>
-                </a>
-                <a href='mountains.html'>
-                    <p class='lightest'>Mountains</p>
-                </a>
-                <a href='escapes.html'>
-                    <p class='lightest'>Escapes</p>
-                </a>
+                <a href="" id="mmBoroughs"><p class='lightest'>Boroughs</p></a>
+                <a href="" id="mmMountains"><p class='lightest'>Mountains</p></a>
+                <a href="" id="mmEscapes"><p class='lightest'>Escapes</p></a>
             </div>
             <div class='nav_box3'>
                 <div class='instagram_logo'>
@@ -79,9 +73,9 @@
             </div>
             <nav id='mobile _nav' class='clear'>
                 <ul id="menu" class='clear'>
-                    <li><a href="boroughs.html">Boroughs</a></li>
-                    <li><a href="mountains.html">Mountains</a></li>
-                    <li><a href="escapes.html">Escapes</a></li>
+                    <li><a href="" id="mmBoroughs">Boroughs</a></li>
+                    <li><a href="" id="mmMountains">Mountains</a></li>
+                    <li><a href="" id="mmEscapes">Escapes</a></li>
                 </ul>
             </nav>
         </div>
@@ -94,21 +88,95 @@
     <!--photo galleries go here-->
     <section id="photos">
 
-
-        <div id="LS_Photos_Left_5X7"><img src="http://i.imgur.com/PgsOv3G.jpg"></div>
+        <!--div id "landing_page" is NEW 07/28/17-->
+        <div id="landing_page">  
+            <!--the following 4 photos with divs are original and sat inside of <section id="photos", originally -->   
+            <div id="LS_Photos_Left_5X7"><img src="http://i.imgur.com/PgsOv3G.jpg"></div>
         
-        <div id="Portrait_Photos_Right_4X3"><img src="http://i.imgur.com/aDgUAbw.jpg"></div>
+            <div id="Portrait_Photos_Right_4X3"><img src="http://i.imgur.com/aDgUAbw.jpg"></div>
 
-        <div id="Portrait_Photos_Left_4X3"><img data-original="http://i.imgur.com/QaEYKBH.jpg" class='lazy'/></div>
+            <div id="Portrait_Photos_Left_4X3"><img data-original="http://i.imgur.com/QaEYKBH.jpg" class='lazy'/></div>
 
-        <div id="LS_Photos_Right_5X7"><img data-original="http://i.imgur.com/8pu3ZHJ.jpg" class='lazy'></div>
+            <div id="LS_Photos_Right_5X7"><img data-original="http://i.imgur.com/8pu3ZHJ.jpg" class='lazy'></div>
+        </div>
+    </section>
 
-        <!--
-        <div id="LS_Photos_Left_5X7"><img src='images/LS_PalmSpringsWall5X7.jpg'></div>
-        <div id="Portrait_Photos_Right_4X3"><img src="images/P_BallardWater4X3.jpg"></div>
-        <div id="Portrait_Photos_Left_4X3"><img data-original="images/IMG_5325.jpg" class='lazy'></div> 
-        <div id="LS_Photos_Right_5X7"><img data-original="images/OKPY5156.jpg" class='lazy'></div>
-        -->
+    <section id="photos_non_landing">
+        <!--div id "boroughs" is NEW 07/28/17-->
+        <div id="boroughs" class="hidden2">
+            <div id='square_photos'><img src='http://i.imgur.com/ySXgH4U.jpg'></div>
+            <div id='square_photos_middle_photo'><img src='http://i.imgur.com/8zxnGHp.jpg'></div>
+            <div id='square_photos_right'><img src='http://i.imgur.com/0sMtMDw.jpg'></div>
+            <div id='LS_Photos_Left_5X7'><img src="http://i.imgur.com/3LQpYL9.jpg"></div>
+            <div id='Portrait_Photos_Right_4X3'><img src="http://i.imgur.com/bdPBufI.jpg"></div>
+            <div id='Portrait_Photos_Left_4X3'><img data-original='http://i.imgur.com/ePAfC6R.jpg'  class='lazy'></div>
+            <div id='LS_Photos_Right_5X7'><img data-original='http://i.imgur.com/9yupt8z.jpg' class='lazy'></div>
+            <div id='LS_Photos_Wide_5X7'><img data-original='http://i.imgur.com/Xs3bUQE.jpg' class='lazy'></div>
+            <div id='LS_Photos_Left_5X7'><img data-original='http://i.imgur.com/LVfM39v.jpg' class='lazy'></div>
+            <div id='Portrait_Photos_Right_4X3'><img data-original='http://i.imgur.com/oXfZUqr.jpg' class='lazy'></div>
+            <div id='square_photos'><img data-original='http://i.imgur.com/hmNUMSU.jpg' class='lazy'></div>
+            <div id='square_photos_middle_photo'><img data-original='http://i.imgur.com/BPd0Lk2.jpg' class='lazy'></div>
+            <div id='square_photos_right'><img data-original='http://i.imgur.com/xzrJn5C.jpg' class='lazy'></div>
+            <div id='LS_Photos_Wide_5X7'><img data-original='http://i.imgur.com/KQFox5L.jpg' class='lazy'></div>
+            <div id='Portrait_Photos_Left_4X3'><img data-original='http://i.imgur.com/n5H7mVV.jpg' class='lazy'></div>
+            <div id='LS_Photos_Right_5X7'><img data-original='http://i.imgur.com/TI5farf.jpg' class='lazy'></div>
+            <div id='square_photos'><img data-original='http://i.imgur.com/WyVkMH8.jpg' class='lazy'></div>
+            <div id='square_photos_middle_photo'><img data-original='http://i.imgur.com/iHcCgvi.jpg' class='lazy'></div>
+            <div id='square_photos_right'><img data-original='http://i.imgur.com/PKKQ80z.jpg' class='lazy'></div>
+            <div id='LS_Photos_Wide_5X7'><img data-original='http://i.imgur.com/5VdKrAC.jpg' class='lazy'></div>
+            <div id='square_photos'><img data-original='http://i.imgur.com/ks64ErB.jpg' class='lazy'></div>
+            <div id='square_photos_middle_photo'><img data-original='http://i.imgur.com/NbWtaMW.jpg' class='lazy'></div>
+            <div id='square_photos_right'><img data-original='http://i.imgur.com/Cjk07iV.jpg' class='lazy'></div>
+            <div id='LS_Photos_Wide_5X7'><img data-original='http://i.imgur.com/MrfCyQs.jpg' class='lazy'></div>
+            </div>
+        <!--div id "mountains" is NEW 07/28/17-->
+        <div id="mountains" class="hidden2">
+             <div id='square_photos'><img src="http://i.imgur.com/b4yAWEj.jpg"></div>
+            <div id='square_photos_middle_photo'><img src="http://i.imgur.com/8vYEVsT.jpg"></div>
+            <div id='square_photos_right'><img src="http://i.imgur.com/lTcI1hv.jpg"></div>
+            <div id='LS_Photos_Left_5X7'><img src="http://i.imgur.com/cgH2oP0.jpg"></div>
+            <div id='Portrait_Photos_Right_4X3'><img src="http://i.imgur.com/pmgNNtX.jpg"></div>
+            <div id='Portrait_Photos_Left_4X3'><img src="http://i.imgur.com/3AF0uyf.jpg"></div>
+            <div id='LS_Photos_Right_5X7'><img src="http://i.imgur.com/FNjVzsd.jpg"></div>
+            <div id='LS_Photos_Left_5X7'><img data-original="http://i.imgur.com/rWMsgbx.jpg" class='lazy'></div>
+            <div id='Portrait_Photos_Right_4X3'><img data-original="http://i.imgur.com/0D2t5IO.jpg" class='lazy'></div>
+            <div id='LS_Photos_Wide_5X7'><img data-original="http://i.imgur.com/w5KENOq.jpg" class='lazy'></div>
+            <div id='Portrait_Photos_Left_4X3'><img data-original="http://i.imgur.com/W8jxzdW.jpg" class='lazy'></div>
+            <div id='LS_Photos_Right_5X7'><img data-original='http://i.imgur.com/ZfV5nT6.jpg' class='lazy'></div>
+            <div id='LS_Photos_Left_5X7'><img data-original='http://i.imgur.com/5KePy4Y.jpg' class='lazy'></div>
+            <div id='Portrait_Photos_Right_4X3'><img data-original='http://i.imgur.com/lV1Ow7o.jpg' class='lazy'></div>
+            <div id='LS_Photos_Wide_5X7'><img data-original='http://i.imgur.com/escVj2B.jpg' class='lazy'></div>
+            <div id='Portrait_Photos_Left_4X3'><img data-original="http://i.imgur.com/XfeXfDW.jpg" class='lazy'></div>
+            <div id='LS_Photos_Right_5X7'><img data-original='http://i.imgur.com/f7rGAHX.jpg' class='lazy'></div>
+            <div id='square_photos'><img src="http://i.imgur.com/0uOq4ic.jpg"></div>
+            <div id='square_photos_middle_photo'><img src="http://i.imgur.com/hmgobip.jpg"></div>
+            <div id='square_photos_right'><img src="http://i.imgur.com/lwuE2y1.jpg"></div>
+            <div id='LS_Photos_Left_5X7'><img data-original="http://i.imgur.com/ylBgIYG.jpg" class='lazy'></div>
+            <div id='Portrait_Photos_Right_4X3'><img src="http://i.imgur.com/GHWu6Ka.jpg"></div>
+            <div id='LS_Photos_Wide_5X7'><img data-original="http://i.imgur.com/5OBRq4Z.jpg" class='lazy'></div>
+        </div>
+        <!--div id "escapes is NEW 07/28/17-->
+        <div id="escapes" class="hidden2">
+            <div id='square_photos'><img src="http://i.imgur.com/wviDltK.jpg"></div>
+            <div id='square_photos_middle_photo'><img src="http://i.imgur.com/5fF4k02.jpg"></div>
+            <div id='square_photos_right'><img src="http://i.imgur.com/DBzj1f5.jpg"></div>
+            <div id='Portrait_Photos_Left_4X3'><img src="http://i.imgur.com/cEVBrbX.jpg"></div>
+            <div id='LS_Photos_Right_5X7'><img src='http://i.imgur.com/UdHEKNw.jpg'></div>
+            <div id='LS_Photos_Left_5X7'><img data-original="http://i.imgur.com/8XebJ3W.jpg" class='lazy'></div>
+            <div id='Portrait_Photos_Right_4X3'><img data-original="http://i.imgur.com/rQamTx4.jpg" class='lazy'></div>
+            <div id='Portrait_Photos_Left_4X3'><img data-original="http://i.imgur.com/jwwQXwC.jpg" class='lazy'></div>
+            <div id='LS_Photos_Right_5X7'><img data-original="http://i.imgur.com/U0BrX5E.jpg" class='lazy'></div>
+            <div id='LS_Photos_Wide_5X7'><img data-original="http://i.imgur.com/uEAxScS.jpg" class='lazy'></div>
+            <div id='square_photos'><img data-original="http://i.imgur.com/rMensUh.jpg" class='lazy'></div>
+            <div id='square_photos_middle_photo'><img data-original="http://i.imgur.com/OU2Orn2.jpg" class='lazy'></div>
+            <div id='square_photos_right'><img data-original="http://i.imgur.com/stJs8qq.jpg" class='lazy'></div>
+            <div id='LS_Photos_Wide_5X7'><img data-original='http://i.imgur.com/eZCtTTQ.jpg' class='lazy'></div>
+            <div id='Portrait_Photos_Left_4X3'><img data-original="http://i.imgur.com/GC19P7I.jpg" class='lazy'></div>
+            <div id='LS_Photos_Right_5X7'><img data-original="http://i.imgur.com/V5uoxmq.jpg" class='lazy'></div>
+            <div id='LS_Photos_Left_5X7'><img data-original="http://i.imgur.com/feP8ivT.jpg" class='lazy'></div>
+            <div id='Portrait_Photos_Right_4X3'><img data-original="http://i.imgur.com/grRhiUg.jpg" class='lazy'></div>
+            <div id='LS_Photos_Wide_5X7'><img data-original='http://i.imgur.com/OFz2bPZ.jpg' class='lazy'></div>
+            </div>   
     </section>
     <!---end photo gallery-->
     <script src="js/jquery-3.1.0.min.js"></script>
