@@ -1,187 +1,144 @@
-<!DOCTYPE html>
-<html lang="en">
 
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>In My Pocket Always</title>
+    <title>E_4S</title>
     <!--fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Archivo+Black&subset=latin-ext" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Judson" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Tenor+Sans" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Archivo+Black&subset=latin-ext' rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Judson' rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Tenor+Sans' rel="stylesheet">
     <!-- end fonts-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/lightbox.css">  
     <link rel="stylesheet" href="css/animate%20(1).css">
 </head>
-
 <body>
-    <header class="clear">
-        <div class='desktop_header'>
-            <div class='logo_col'>
-                <div class='logo_box'>
-                    <a href="index.html">
-                        <p class='strong'>IMPA</p>
-                    </a>
-                </div>
-            </div>
-            <div class='name_col'>
-                <div class='above_text_1'>
-                    <p class='light'>WITH</p>
-                </div>
-                <div class='name_box2'>
-                    <p class='light'>SPENCER</p>
-                    <p class='light'>JACK</p>
-                </div>
-            </div>
-            <!---desktop nav-->
-            <div class='nav_box1'>
-                <div class='above_text_2'>
-                    <p class='light'>BROWSE BY</p>
-                </div>
-                <a href="" id="mmBoroughs"><p class='lightest'>Boroughs</p></a>
-                <a href="" id="mmMountains"><p class='lightest'>Mountains</p></a>
-                <a href="" id="mmEscapes"><p class='lightest'>Escapes</p></a>
-            </div>
-            <div class='nav_box3'>
-                <div class='instagram_logo'>
-                    <a href="https://www.instagram.com/spencerdaily/">
-                        <img src="images/logo sources/glyph-logo_May2016_200.png" />
-                    </a>
-                </div>
-                <div class='facebook_logo'>
-                    <a href="https://www.facebook.com/Rainier2012">
-                        <img src="images/logo sources/FB-f-Logo__white_512.png" />
-                    </a>
-                </div>
-            </div>
-        </div>
-        <!--end desktop header->
-        <!-mobile header-->
-        <div class='mobile_header'>
-            <div class='mobile_logo'>
-                <a href="https://spencerljack.github.io/Final-Project-Spencer-Jack/In_My_Pocket_Always.html">
-                    <p class='logo_light'>IMPA</p>
-                </a>
-            </div>
-            <!---This is creates the mobile hamburger menu-->
-            <div class="hamburger">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-            </div>
-            <nav id='mobile _nav' class='clear'>
-                <ul id="menu" class='clear'>
-                    <li><a href="" id="mmBoroughs">Boroughs</a></li>
-                    <li><a href="" id="mmMountains">Mountains</a></li>
-                    <li><a href="" id="mmEscapes">Escapes</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <div id='subHeaderText' class='clear'>
-        <h3>
-        In My Pocket Always. Not geographically-specific, this moto fuels the adventures we share together. Inspired by my kids.
-        </h3>
+<header>
+    <div class="hamburger_click_me">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
     </div>
-    <!--photo galleries go here-->
-    <section id="photos">
-
-        <!--div id "landing_page" is NEW 07/28/17-->
-        <div id="landing_page">  
-            <!--the following 4 photos with divs are original and sat inside of <section id="photos", originally -->   
-            <div id="LS_Photos_Left_5X7"><img src="http://i.imgur.com/PgsOv3G.jpg"></div>
-        
-            <div id="Portrait_Photos_Right_4X3"><img src="http://i.imgur.com/aDgUAbw.jpg"></div>
-
-            <div id="Portrait_Photos_Left_4X3"><img data-original="http://i.imgur.com/QaEYKBH.jpg" class='lazy'/></div>
-
-            <div id="LS_Photos_Right_5X7"><img data-original="http://i.imgur.com/8pu3ZHJ.jpg" class='lazy'></div>
-        </div>
-    </section>
-
+    <nav id='main_navbar' class='hidden'>
+        <ul id='side_nav_menu'>
+            <li><a href="" id="mmBoroughs">Boroughs</a></li>
+            <li><a href="" id="mmMountains">Mountains</a></li>
+            <li><a href="" id="mmEscapes">Escapes</a></li>
+            <li><a href='https://spencerljack.github.io/index.html'><img id='menu_logo' src='./images/logo sources/UpdatedLogo.svg'></a></li>
+        </ul>
+        <div id='full_page_opacity_screen' class='hidden animated fadeIn'></div>
+    </nav>
+    <a href='https://spencerljack.github.io/index.html'><img id='header_logo' src='./images/logo sources/UpdatedLogo.svg'></a>
+</header>
+<!--end of mobile header-->
     <section id="photos_non_landing">
-        <!--div id "boroughs" is NEW 07/28/17-->
-        <div id="boroughs" class="hidden2">
-            <div id='square_photos'><img src='http://i.imgur.com/ySXgH4U.jpg'></div>
-            <div id='square_photos_middle_photo'><img src='http://i.imgur.com/8zxnGHp.jpg'></div>
-            <div id='square_photos_right'><img src='http://i.imgur.com/0sMtMDw.jpg'></div>
-            <div id='LS_Photos_Left_5X7'><img src="http://i.imgur.com/3LQpYL9.jpg"></div>
-            <div id='Portrait_Photos_Right_4X3'><img src="http://i.imgur.com/bdPBufI.jpg"></div>
-            <div id='Portrait_Photos_Left_4X3'><img data-original='http://i.imgur.com/ePAfC6R.jpg'  class='lazy'></div>
-            <div id='LS_Photos_Right_5X7'><img data-original='http://i.imgur.com/9yupt8z.jpg' class='lazy'></div>
-            <div id='LS_Photos_Wide_5X7'><img data-original='http://i.imgur.com/Xs3bUQE.jpg' class='lazy'></div>
-            <div id='LS_Photos_Left_5X7'><img data-original='http://i.imgur.com/LVfM39v.jpg' class='lazy'></div>
-            <div id='Portrait_Photos_Right_4X3'><img data-original='http://i.imgur.com/oXfZUqr.jpg' class='lazy'></div>
-            <div id='square_photos'><img data-original='http://i.imgur.com/hmNUMSU.jpg' class='lazy'></div>
-            <div id='square_photos_middle_photo'><img data-original='http://i.imgur.com/BPd0Lk2.jpg' class='lazy'></div>
-            <div id='square_photos_right'><img data-original='http://i.imgur.com/xzrJn5C.jpg' class='lazy'></div>
-            <div id='LS_Photos_Wide_5X7'><img data-original='http://i.imgur.com/KQFox5L.jpg' class='lazy'></div>
-            <div id='Portrait_Photos_Left_4X3'><img data-original='http://i.imgur.com/n5H7mVV.jpg' class='lazy'></div>
-            <div id='LS_Photos_Right_5X7'><img data-original='http://i.imgur.com/TI5farf.jpg' class='lazy'></div>
-            <div id='square_photos'><img data-original='http://i.imgur.com/WyVkMH8.jpg' class='lazy'></div>
-            <div id='square_photos_middle_photo'><img data-original='http://i.imgur.com/iHcCgvi.jpg' class='lazy'></div>
-            <div id='square_photos_right'><img data-original='http://i.imgur.com/PKKQ80z.jpg' class='lazy'></div>
-            <div id='LS_Photos_Wide_5X7'><img data-original='http://i.imgur.com/5VdKrAC.jpg' class='lazy'></div>
-            <div id='square_photos'><img data-original='http://i.imgur.com/ks64ErB.jpg' class='lazy'></div>
-            <div id='square_photos_middle_photo'><img data-original='http://i.imgur.com/NbWtaMW.jpg' class='lazy'></div>
-            <div id='square_photos_right'><img data-original='http://i.imgur.com/Cjk07iV.jpg' class='lazy'></div>
-            <div id='LS_Photos_Wide_5X7'><img data-original='http://i.imgur.com/MrfCyQs.jpg' class='lazy'></div>
-            </div>
-        <!--div id "mountains" is NEW 07/28/17-->
-        <div id="mountains" class="hidden2">
-             <div id='square_photos'><img src="http://i.imgur.com/b4yAWEj.jpg"></div>
-            <div id='square_photos_middle_photo'><img src="http://i.imgur.com/8vYEVsT.jpg"></div>
-            <div id='square_photos_right'><img src="http://i.imgur.com/lTcI1hv.jpg"></div>
-            <div id='LS_Photos_Left_5X7'><img src="http://i.imgur.com/cgH2oP0.jpg"></div>
-            <div id='Portrait_Photos_Right_4X3'><img src="http://i.imgur.com/pmgNNtX.jpg"></div>
-            <div id='Portrait_Photos_Left_4X3'><img src="http://i.imgur.com/3AF0uyf.jpg"></div>
-            <div id='LS_Photos_Right_5X7'><img src="http://i.imgur.com/FNjVzsd.jpg"></div>
-            <div id='LS_Photos_Left_5X7'><img data-original="http://i.imgur.com/rWMsgbx.jpg" class='lazy'></div>
-            <div id='Portrait_Photos_Right_4X3'><img data-original="http://i.imgur.com/0D2t5IO.jpg" class='lazy'></div>
-            <div id='LS_Photos_Wide_5X7'><img data-original="http://i.imgur.com/w5KENOq.jpg" class='lazy'></div>
-            <div id='Portrait_Photos_Left_4X3'><img data-original="http://i.imgur.com/W8jxzdW.jpg" class='lazy'></div>
-            <div id='LS_Photos_Right_5X7'><img data-original='http://i.imgur.com/ZfV5nT6.jpg' class='lazy'></div>
-            <div id='LS_Photos_Left_5X7'><img data-original='http://i.imgur.com/5KePy4Y.jpg' class='lazy'></div>
-            <div id='Portrait_Photos_Right_4X3'><img data-original='http://i.imgur.com/lV1Ow7o.jpg' class='lazy'></div>
-            <div id='LS_Photos_Wide_5X7'><img data-original='http://i.imgur.com/escVj2B.jpg' class='lazy'></div>
-            <div id='Portrait_Photos_Left_4X3'><img data-original="http://i.imgur.com/XfeXfDW.jpg" class='lazy'></div>
-            <div id='LS_Photos_Right_5X7'><img data-original='http://i.imgur.com/f7rGAHX.jpg' class='lazy'></div>
-            <div id='square_photos'><img src="http://i.imgur.com/0uOq4ic.jpg"></div>
-            <div id='square_photos_middle_photo'><img src="http://i.imgur.com/hmgobip.jpg"></div>
-            <div id='square_photos_right'><img src="http://i.imgur.com/lwuE2y1.jpg"></div>
-            <div id='LS_Photos_Left_5X7'><img data-original="http://i.imgur.com/ylBgIYG.jpg" class='lazy'></div>
-            <div id='Portrait_Photos_Right_4X3'><img src="http://i.imgur.com/GHWu6Ka.jpg"></div>
-            <div id='LS_Photos_Wide_5X7'><img data-original="http://i.imgur.com/5OBRq4Z.jpg" class='lazy'></div>
+        <div id="boroughs" class="hidden">
+            <div class='Square_photos_left'><a href='https://i.imgur.com/2eXCQZ8.jpg' data-lightbox="Boroughs" data-title=""><img src='https://i.imgur.com/2eXCQZ8.jpg'></a></div>
+            <div class='Square_photos_middle_photo'><a href='https://i.imgur.com/WpLghr6.jpg' data-lightbox="Boroughs" data-title=""><img src='https://i.imgur.com/WpLghr6.jpg'><a></div>
+            <div class='Square_photos_right'><a href='https://i.imgur.com/vKO78l3.jpg' data-lightbox="Boroughs" data-title=""><img src='https://i.imgur.com/vKO78l3.jpg'><a></div>
+            <div class='LS_Photos_Wide_5X7'><a href='https://i.imgur.com/1ZIsKff.jpg' data-lightbox="Boroughs" data-title=""><img src='https://i.imgur.com/1ZIsKff.jpg'></a></div>
+            <div class='Square_photos_left'><a href='https://i.imgur.com/5kYgeMA.jpg' data-lightbox="Boroughs" data-title=""><img src='https://i.imgur.com/5kYgeMA.jpg'></a></div>
+            <div class='Square_photos_middle_photo'><a href='https://i.imgur.com/lEY41r3.jpg' data-lightbox="Boroughs" data-title=""><img src='https://i.imgur.com/lEY41r3.jpg'><a></div>
+            <div class='Square_photos_right'><a href='https://i.imgur.com/ANSm43C.jpg' data-lightbox="Boroughs" data-title=""><img src='https://i.imgur.com/ANSm43C.jpg'><a></div>
+            <div class='Portrait_Photos_Left_4X3'><a href='https://i.imgur.com/R1LUeXn.jpg' data-lightbox="Boroughs" data-title=""><img src='https://i.imgur.com/R1LUeXn.jpg'></a></div>
+            <div class='LS_Photos_Right_5X7'><a href='https://i.imgur.com/0icoXhy.jpg' data-lightbox="Boroughs" data-title=""><img src='https://i.imgur.com/0icoXhy.jpg'><a></div>
+            <div class='Square_photos_left'><a href='https://i.imgur.com/7MY9xG2.jpg' data-lightbox="Boroughs" data-title=""><img data-original='https://i.imgur.com/7MY9xG2.jpg' class='lazy'></a></div>
+            <div class='Square_photos_middle_photo'><a href='https://i.imgur.com/F7EMKGo.jpg' data-lightbox="Boroughs" data-title=""><img data-original='https://i.imgur.com/F7EMKGo.jpg' class='lazy'><a></div>
+            <div class='Square_photos_right'><a href='https://i.imgur.com/sZrbr6e.jpg' data-lightbox="Boroughs" data-title=""><img data-original='https://i.imgur.com/sZrbr6e.jpg' class='lazy'><a></div>
+            <div class='Portrait_Photos_Left_4X3'><a href='https://i.imgur.com/fA7oVSl.jpg' data-lightbox="Boroughs" data-title=""><img data-original='https://i.imgur.com/fA7oVSl.jpg' class='lazy'><a></div>
+            <div class='LS_Photos_Right_5X7'><a href='https://i.imgur.com/pcCdAKJ.jpg' data-lightbox="Boroughs" data-title=""><img data-original='http://imgur.com/pcCdAKJ.jpg' class='lazy'><a></div>
+            <div class='LS_Photos_Wide_5X7'><a href='https://i.imgur.com/BAWWKUX.jpg' data-lightbox="Boroughs" data-title=""><img data-original='https://i.imgur.com/BAWWKUX.jpg' class='lazy'></a></div>
+            <div class='LS_Photos_Left_5X7'><a href='https://i.imgur.com/OJiy0Ns.jpg' data-lightbox="Boroughs" data-title=""><img data-original='https://i.imgur.com/OJiy0Ns.jpg' class='lazy'><a></div>
+            <div class='Portrait_Photos_Right_4X3'><a href='https://i.imgur.com/rcPe3gW.jpg' data-lightbox="Boroughs" data-title=""><img data-original='http://imgur.com/rcPe3gW.jpg' class='lazy'><a></div>
+            <div class='Portrait_Photos_Left_4X3'><a href='https://i.imgur.com/ezAet71.jpg' data-lightbox="Boroughs" data-title=""><img data-original='https://i.imgur.com/ezAet71.jpg' class='lazy'></a></div>
+            <div class='LS_Photos_Right_5X7'><a href='https://i.imgur.com/FgoBZYr.jpg' data-lightbox="Boroughs" data-title=""><img data-original='https://i.imgur.com/FgoBZYr.jpg' class='lazy'></a></div>
+            <div class='LS_Photos_Wide_5X7'><a href='https://i.imgur.com/2uQpSCZ.jpg' data-lightbox="Boroughs" data-title=""><img data-original='https://i.imgur.com/2uQpSCZ.jpg' class='lazy'></a></div>
+            <div class='Square_photos_left'><a href='https://i.imgur.com/ySXgH4U.jpg' data-lightbox="Boroughs" data-title=""><img data-original='https://i.imgur.com/ySXgH4U.jpg' class='lazy'></a></div>
+            <div class='Square_photos_middle_photo'><a href='https://i.imgur.com/8zxnGHp.jpg' data-lightbox="Boroughs" data-title=""><img data-original='https://i.imgur.com/8zxnGHp.jpg' class='lazy'><a></div>
+            <div class='Square_photos_right'><a href='https://i.imgur.com/0sMtMDw.jpg' data-lightbox="Boroughs" data-title=""><img data-original='https://i.imgur.com/0sMtMDw.jpg' class='lazy'><a></div>
+            <div class='LS_Photos_Left_5X7'><a href='https://i.imgur.com/3LQpYL9.jpg' data-lightbox="Boroughs" data-title=""><img data-original='https://i.imgur.com/3LQpYL9.jpg' class='lazy'><a></div>
+            <div class='Portrait_Photos_Right_4X3'><a href='https://i.imgur.com/bdPBufI.jpg' data-lightbox="Boroughs" data-title=""><img data-original='http://imgur.com/bdPBufI.jpg' class='lazy'><a></div>
+            <div class='Portrait_Photos_Left_4X3'><a href='https://i.imgur.com/ePAfC6R.jpg' data-lightbox="Boroughs" data-title=""><img data-original='https://i.imgur.com/ePAfC6R.jpg' class='lazy'></a></div>
+            <div class='LS_Photos_Right_5X7'><a href='https://i.imgur.com/9yupt8z.jpg' data-lightbox="Boroughs" data-title=""><img data-original='https://i.imgur.com/9yupt8z.jpg' class='lazy'></a></div>
+            <div class='LS_Photos_Wide_5X7'><a href='https://i.imgur.com/Xs3bUQE.jpg' data-lightbox="Boroughs" data-title=""><img data-original='https://i.imgur.com/Xs3bUQE.jpg' class='lazy'></a></div>
+            <div class='LS_Photos_Left_5X7'><a href='https://i.imgur.com/LVfM39v.jpg' data-lightbox="Boroughs" data-title=""><img data-original='https://i.imgur.com/LVfM39v.jpg' class='lazy'></a></div>
+            <div class='Portrait_Photos_Right_4X3'><a href='https://i.imgur.com/oXfZUqr.jpg' data-lightbox="Boroughs" data-title=""><img data-original='https://i.imgur.com/oXfZUqr.jpg' class='lazy'></a></div>
+            <div class='Square_photos_left'><a href='https://i.imgur.com/hmNUMSU.jpg' data-lightbox="Boroughs" data-title=""><img data-original='https://i.imgur.com/hmNUMSU.jpg' class='lazy'></a></div>
+            <div class='Square_photos_middle_photo'><a href='https://i.imgur.com/BPd0Lk2.jpg' data-lightbox="Boroughs" data-title=""><img data-original='https://i.imgur.com/BPd0Lk2.jpg' class='lazy'></a></div>
+            <div class='Square_photos_right'><a href='https://i.imgur.com/xzrJn5C.jpg' data-lightbox="Boroughs" data-title=""><img data-original='https://i.imgur.com/xzrJn5C.jpg' class='lazy'></a></div>
+            <div class='LS_Photos_Wide_5X7'><a href='https://i.imgur.com/KQFox5L.jpg' data-lightbox="Boroughs" data-title=""><img data-original='https://i.imgur.com/KQFox5L.jpg' class='lazy'></a></div>
+            <div class='Portrait_Photos_Left_4X3'><a href='https://i.imgur.com/n5H7mVV.jpg' data-lightbox="Boroughs" data-title=""><img data-original='https://i.imgur.com/n5H7mVV.jpg' class='lazy'></a></div>
+            <div class='LS_Photos_Right_5X7'><a href='https://i.imgur.com/TI5farf.jpg' data-lightbox="Boroughs" data-title=""><img data-original='https://i.imgur.com/TI5farf.jpg' class='lazy'></a></div>
+            <div class='Square_photos_left'><a href='https://i.imgur.com/WyVkMH8.jpg' data-lightbox="Boroughs" data-title=""><img data-original='https://i.imgur.com/WyVkMH8.jpg' class='lazy'></a></div>
+            <div class='Square_photos_middle_photo'><a href='https://i.imgur.com/iHcCgvi.jpg' data-lightbox="Boroughs" data-title=""><img data-original='https://i.imgur.com/iHcCgvi.jpg' class='lazy'></a></div>
+            <div class='Square_photos_right'><a href='https://i.imgur.com/PKKQ80z.jpg' data-lightbox="Boroughs" data-title=""><img data-original='https://i.imgur.com/PKKQ80z.jpg' class='lazy'></a></div>
+            <div class='LS_Photos_Wide_5X7'><a href='https://i.imgur.com/5VdKrAC.jpg' data-lightbox="Boroughs" data-title=""><img data-original='https://i.imgur.com/5VdKrAC.jpg' class='lazy'></a></div>
+            <div class='Square_photos_left'><a href='https://i.imgur.com/ks64ErB.jpg' data-lightbox="Boroughs" data-title=""><img data-original='https://i.imgur.com/ks64ErB.jpg' class='lazy'></a></div>
+            <div class='Square_photos_middle_photo'><a href='https://i.imgur.com/NbWtaMW.jpg' data-lightbox="Boroughs" data-title=""><img data-original='https://i.imgur.com/NbWtaMW.jpg' class='lazy'></a></div>
+            <div class='Square_photos_right'><a href='https://i.imgur.com/Cjk07iV.jpg' data-lightbox="Boroughs" data-title=""><img data-original='https://i.imgur.com/Cjk07iV.jpg' class='lazy'></a></div>
+            <div class='LS_Photos_Wide_5X7'><a href='https://i.imgur.com/MrfCyQs.jpg' data-lightbox="Boroughs" data-title=""><img data-original='https://i.imgur.com/MrfCyQs.jpg' class='lazy'></a></div>
         </div>
-        <!--div id "escapes is NEW 07/28/17-->
-        <div id="escapes" class="hidden2">
-            <div id='square_photos'><img src="http://i.imgur.com/wviDltK.jpg"></div>
-            <div id='square_photos_middle_photo'><img src="http://i.imgur.com/5fF4k02.jpg"></div>
-            <div id='square_photos_right'><img src="http://i.imgur.com/DBzj1f5.jpg"></div>
-            <div id='Portrait_Photos_Left_4X3'><img src="http://i.imgur.com/cEVBrbX.jpg"></div>
-            <div id='LS_Photos_Right_5X7'><img src='http://i.imgur.com/UdHEKNw.jpg'></div>
-            <div id='LS_Photos_Left_5X7'><img data-original="http://i.imgur.com/8XebJ3W.jpg" class='lazy'></div>
-            <div id='Portrait_Photos_Right_4X3'><img data-original="http://i.imgur.com/rQamTx4.jpg" class='lazy'></div>
-            <div id='Portrait_Photos_Left_4X3'><img data-original="http://i.imgur.com/jwwQXwC.jpg" class='lazy'></div>
-            <div id='LS_Photos_Right_5X7'><img data-original="http://i.imgur.com/U0BrX5E.jpg" class='lazy'></div>
-            <div id='LS_Photos_Wide_5X7'><img data-original="http://i.imgur.com/uEAxScS.jpg" class='lazy'></div>
-            <div id='square_photos'><img data-original="http://i.imgur.com/rMensUh.jpg" class='lazy'></div>
-            <div id='square_photos_middle_photo'><img data-original="http://i.imgur.com/OU2Orn2.jpg" class='lazy'></div>
-            <div id='square_photos_right'><img data-original="http://i.imgur.com/stJs8qq.jpg" class='lazy'></div>
-            <div id='LS_Photos_Wide_5X7'><img data-original='http://i.imgur.com/eZCtTTQ.jpg' class='lazy'></div>
-            <div id='Portrait_Photos_Left_4X3'><img data-original="http://i.imgur.com/GC19P7I.jpg" class='lazy'></div>
-            <div id='LS_Photos_Right_5X7'><img data-original="http://i.imgur.com/V5uoxmq.jpg" class='lazy'></div>
-            <div id='LS_Photos_Left_5X7'><img data-original="http://i.imgur.com/feP8ivT.jpg" class='lazy'></div>
-            <div id='Portrait_Photos_Right_4X3'><img data-original="http://i.imgur.com/grRhiUg.jpg" class='lazy'></div>
-            <div id='LS_Photos_Wide_5X7'><img data-original='http://i.imgur.com/OFz2bPZ.jpg' class='lazy'></div>
-            </div>   
+        <div id="mountains" class="hidden">            
+            <div class='Square_photos_left'><a href='https://i.imgur.com/b4yAWEj.jpg' data-lightbox="Mountains" data-title=""><img src='https://i.imgur.com/b4yAWEj.jpg'></a></div>
+            <div class='Square_photos_middle_photo'><a href='https://i.imgur.com/8vYEVsT.jpg' data-lightbox="Mountains" data-title=""><img src='https://i.imgur.com/8vYEVsT.jpg'></a></div>
+            <div class='Square_photos_right'><a href='https://i.imgur.com/lTcI1hv.jpg' data-lightbox="Mountains" data-title=""><img src='https://i.imgur.com/lTcI1hv.jpg'></a></div>
+            <div class='LS_Photos_Left_5X7'><a href='https://i.imgur.com/cgH2oP0.jpg' data-lightbox="Mountains" data-title=""><img src='https://i.imgur.com/cgH2oP0.jpg'></a></div>
+            <div class='Portrait_Photos_Right_4X3'><a href='https://i.imgur.com/pmgNNtX.jpg' data-lightbox="Mountains" data-title=""><img src='https://i.imgur.com/pmgNNtX.jpg'></a></div>
+            <div class='Portrait_Photos_Left_4X3'><a href='https://i.imgur.com/3AF0uyf.jpg' data-lightbox="Mountains" data-title=""><img src='https://i.imgur.com/3AF0uyf.jpg'></a></div>
+            <div class='LS_Photos_Right_5X7'><a href='https://i.imgur.com/FNjVzsd.jpg' data-lightbox="Mountains" data-title=""><img src='https://i.imgur.com/FNjVzsd.jpg'></a></div>
+            <div class='LS_Photos_Left_5X7'><a href='https://i.imgur.com/rWMsgbx.jpg' data-lightbox="Mountains" data-title=""><img src='https://i.imgur.com/rWMsgbx.jpg'></a></div>
+            <div class='Portrait_Photos_Right_4X3'><a href='https://i.imgur.com/0D2t5IO.jpg' data-lightbox="Mountains" data-title=""><img src='https://i.imgur.com/0D2t5IO.jpg'></a></div>
+            <div class='LS_Photos_Wide_5X7'><a href='https://i.imgur.com/w5KENOq.jpg' data-lightbox="Mountains" data-title=""><img src='https://i.imgur.com/w5KENOq.jpg'></a></div>
+            <div class='Portrait_Photos_Left_4X3'><a href='https://i.imgur.com/W8jxzdW.jpg' data-lightbox="Mountains" data-title=""><img data-original='https://i.imgur.com/W8jxzdW.jpg' class='lazy'></a></div>
+            <div class='LS_Photos_Right_5X7'><a href='https://i.imgur.com/ZfV5nT6.jpg' data-lightbox="Mountains" data-title=""><img data-original='https://i.imgur.com/ZfV5nT6.jpg' class='lazy'></a></div>
+            <div class='LS_Photos_Left_5X7'><a href='https://i.imgur.com/5KePy4Y.jpg' data-lightbox="Mountains" data-title=""><img data-original='https://i.imgur.com/5KePy4Y.jpg' class='lazy'></a></div>
+            <div class='Portrait_Photos_Right_4X3'><a href='https://i.imgur.com/lV1Ow7o.jpg' data-lightbox="Mountains" data-title=""><img data-original='https://i.imgur.com/lV1Ow7o.jpg' class='lazy'></a></div>
+            <div class='LS_Photos_Wide_5X7'><a href= 'https://i.imgur.com/escVj2B.jpg' data-lightbox="Mountains" data-title=""><img data-original='https://i.imgur.com/escVj2B.jpg' class='lazy'></a></div>
+            <div class='Portrait_Photos_Left_4X3'><a href='https://i.imgur.com/XfeXfDW.jpg' data-lightbox="Mountains" data-title=""><img data-original='https://i.imgur.com/XfeXfDW.jpg' class='lazy'></a></div>
+            <div class='LS_Photos_Right_5X7'><a href='https://i.imgur.com/f7rGAHX.jpg' data-lightbox="Mountains" data-title=""><img data-original='https://i.imgur.com/f7rGAHX.jpg' class='lazy'></a></div>
+            <div class='Square_photos_left'><a href='https://i.imgur.com/0uOq4ic.jpg' data-lightbox="Mountains" data-title=""><img data-original='https://i.imgur.com/0uOq4ic.jpg' class='lazy'></a></div>
+            <div class='Square_photos_middle_photo'><a href='https://i.imgur.com/hmgobip.jpg' data-lightbox="Mountains" data-title=""><img data-original='https://i.imgur.com/hmgobip.jpg' class='lazy'></a></div>
+            <div class='Square_photos_right'><a href='https://i.imgur.com/lwuE2y1.jpg' data-lightbox="Mountains" data-title=""><img data-original='https://i.imgur.com/lwuE2y1.jpg' class='lazy'></a></div>
+            <div class='LS_Photos_Left_5X7'><a href='https://i.imgur.com/ylBgIYG.jpg' data-lightbox="Mountains" data-title=""><img data-original='https://i.imgur.com/ylBgIYG.jpg' class='lazy'></a></div>
+            <div class='Portrait_Photos_Right_4X3'><a href='https://i.imgur.com/GHWu6Ka.jpg' data-lightbox="Mountains" data-title=""><img data-original='https://i.imgur.com/GHWu6Ka.jpg' class='lazy'></a></div>
+            <div class='LS_Photos_Wide_5X7'><a href='https://i.imgur.com/5OBRq4Z.jpg' data-lightbox="Mountains" data-title=""><img data-original='https://i.imgur.com/5OBRq4Z.jpg' class='lazy'></a></div>
+        </div>
+        <div id="escapes" class="hidden">
+            <div class='Square_photos_left'><a href='https://i.imgur.com/wviDltK.jpg' data-lightbox="Escapes" data-title=""><img src='https://i.imgur.com/wviDltK.jpg'></a></div>
+            <div class='Square_photos_middle_photo'><a href='https://i.imgur.com/5fF4k02.jpg' data-lightbox="Escapes" data-title=""><img src='https://i.imgur.com/5fF4k02.jpg'></a></div>
+            <div class='Square_photos_right'><a href='https://i.imgur.com/DBzj1f5.jpg' data-lightbox="Escapes" data-title=""><img src='https://i.imgur.com/DBzj1f5.jpg'></a></div>
+            <div class='Portrait_Photos_Left_4X3'><a href='https://i.imgur.com/cEVBrbX.jpg' data-lightbox="Escapes" data-title=""><img src='https://i.imgur.com/cEVBrbX.jpg'></a></div>
+            <div class='LS_Photos_Right_5X7'><a href='https://i.imgur.com/UdHEKNw.jpg' data-lightbox="Escapes" data-title=""><img src='https://i.imgur.com/UdHEKNw.jpg'></a></div>
+            <div class='LS_Photos_Left_5X7'><a href='https://i.imgur.com/8XebJ3W.jpg' data-lightbox="Escapes" data-title=""><img src='https://i.imgur.com/8XebJ3W.jpg'></a></div>
+            <div class='Portrait_Photos_Right_4X3'><a href='https://i.imgur.com/rQamTx4.jpg' data-lightbox="Escapes" data-title=""><img src='https://i.imgur.com/rQamTx4.jpg'></a></div>
+            <div class='Portrait_Photos_Left_4X3'><a href='https://i.imgur.com/jwwQXwC.jpg' data-lightbox="Escapes" data-title=""><img src='https://i.imgur.com/jwwQXwC.jpg'></a></div>
+            <div class='LS_Photos_Right_5X7'><a href='https://i.imgur.com/U0BrX5E.jpg' data-lightbox="Escapes" data-title=""><img src='https://i.imgur.com/U0BrX5E.jpg'></a></div>
+            <div class='LS_Photos_Wide_5X7'><a href='https://i.imgur.com/uEAxScS.jpg' data-lightbox="Escapes" data-title=""><img data-original='https://i.imgur.com/uEAxScS.jpg' class='lazy'></a></div>
+            <div class='Square_photos_left'><a href='https://i.imgur.com/rMensUh.jpg' data-lightbox="Escapes" data-title=""><img data-original='https://i.imgur.com/rMensUh.jpg' class='lazy'></a></div>
+            <div class='Square_photos_middle_photo'><a href='https://i.imgur.com/OU2Orn2.jpg' data-lightbox="Escapes" data-title=""><img data-original='https://i.imgur.com/OU2Orn2.jpg' class='lazy'></a></div>
+            <div class='Square_photos_right'><a href='https://i.imgur.com/stJs8qq.jpg' data-lightbox="Escapes" data-title=""><img data-original='https://i.imgur.com/stJs8qq.jpg' class='lazy'></a></div>
+            <div class='LS_Photos_Wide_5X7'><a href='https://i.imgur.com/eZCtTTQ.jpg' data-lightbox="Escapes" data-title=""><img data-original='https://i.imgur.com/eZCtTTQ.jpg' class='lazy'></a></div>
+            <div class='Portrait_Photos_Left_4X3'><a href='https://i.imgur.com/GC19P7I.jpg' data-lightbox="Escapes" data-title=""><img data-original='https://i.imgur.com/GC19P7I.jpg' class='lazy'></a></div>
+            <div class='LS_Photos_Right_5X7'><a href='https://i.imgur.com/V5uoxmq.jpg' data-lightbox="Escapes" data-title=""><img data-original='https://i.imgur.com/V5uoxmq.jpg' class='lazy'></a></div>
+            <div class='LS_Photos_Left_5X7'><a href='https://i.imgur.com/feP8ivT.jpg' data-lightbox="Escapes" data-title=""><img data-original='https://i.imgur.com/feP8ivT.jpg' class='lazy'></a></div>
+            <div class='Portrait_Photos_Right_4X3'><a href='https://i.imgur.com/grRhiUg.jpg' data-lightbox="Escapes" data-title=""><img data-original='https://i.imgur.com/grRhiUg.jpg' class='lazy'></a></div>
+            <div class='LS_Photos_Wide_5X7'><a href='https://i.imgur.com/OFz2bPZ.jpg' data-lightbox="Escapes" data-title=""><img data-original='https://i.imgur.com/OFz2bPZ.jpg' class='lazy'></a></div>
+        </div>
+        <div id = "scroll_Up_Arrow">
+            <img id='scrollUpArrow' src='./images/scrollUpArrow.png'>
+        </div>
+        <footer>
+            <div id='footer_div_1'><h2>S Jack 2017</h2></div>
+            <div id='footer_div_2'><a href='' id='click_for_top'>Top</a></div>
+            <div id='footer_div_3'></div>
+        </footer>  
     </section>
-    <!---end photo gallery-->
     <script src="js/jquery-3.1.0.min.js"></script>
     <script src="js/jquery.lazyload.js"></script>
-    <script src="js/index.js"></script>
+    <script src="js/lightbox.js"></script>
+    <script src="js/script.js"></script>
 </body>
-
 </html>

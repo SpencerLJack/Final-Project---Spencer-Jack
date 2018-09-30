@@ -19,7 +19,7 @@
     $.fn.lazyload = function(options) {
         var elements = this;
         var $container;
-        var settings = {
+         var settings = {
             threshold       : 0,
             failure_limit   : 0,
             event           : "scroll",
